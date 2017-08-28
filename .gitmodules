@@ -1,0 +1,3 @@
+[submodule "xpswifi"]
+	path = xpswifi
+	url = git@github.com:nerflad/xpswifi
