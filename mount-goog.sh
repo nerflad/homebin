@@ -14,7 +14,13 @@ fn_unmount () {
     if [ -n "$DRIVE_PATH" ]; then
         if [ -n "$1" ]; then
             echo Detected Google Drive mounted at $DRIVE_PATH
-            echo Ignoring input paramaters...
+            read -p "Unmount? (y/N): " choice
+            case $choice in
+                y|Y )
+                    ;;
+                * )
+                    exit 0;;
+            esac
         fi
         echo Unmounting $DRIVE_PATH...
         sudo umount $DRIVE_PATH
