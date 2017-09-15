@@ -23,7 +23,7 @@ fn_unmount () {
             esac
         fi
         echo Unmounting $DRIVE_PATH...
-        sudo umount $DRIVE_PATH
+        sudo umount $DRIVE_PATH || exit 1
     else
         echo Could not determine path of Google Drive directory.
         echo Aborting...
