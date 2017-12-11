@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# copy this to /usr/bin/. if you want xfce4 "Switch User" to work
+# copy this to /usr/bin/. if you want xfce4 "Switch User" to work.
 # by default, xscreensaver will call it as well, which kills any music you might
 # be listening to.
 /usr/bin/dm-tool switch-to-greeter
