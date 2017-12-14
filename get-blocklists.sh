@@ -5,4 +5,4 @@ curl -s https://www.iblocklist.com/lists.php \
     | sed -n "s/.*value='\(http[^']*\)'.*/'\1'/p" \
     | xargs wget -O - \
     | gunzip \
-    | egrep -v '^#' > ~/torrent_blocklist_url.txt
+    | egrep -v '^#' > ~/Documents/torrent_blocklist_url.txt
