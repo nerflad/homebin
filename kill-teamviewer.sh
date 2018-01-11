@@ -14,7 +14,7 @@ function kill_array {
     if ! [ -z "$1" ]; then
         for i in $1; do
           echo Killing $i...
-          kill -9 $i;
+          kill -9 $i || sudo kill -9 $i
         done
     else
         EXITCODEFLURP=1;
